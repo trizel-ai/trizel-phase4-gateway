@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://trizel.ai/schema/evaluation_result.schema.json",
+  "title": "Phase-4 Evaluation Result",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "run_id",
+    "claim_id",
+    "object_scope",
+    "decision",
+    "evidence",
+    "notes"
+  ],
+  "properties": {
+    "run_id": { "type": "string", "minLength": 1 },
+    "claim_id": { "type": "string", "minLength": 1 },
+    "object_scope": { "type": "string", "minLength": 1 },
+
+    "decision": {
+      "type": "string",
+      "enum": ["TESTED_PASS", "TESTED_FAIL", "CONSTRAINED", "NON_TESTABLE_PRESENTLY", "UNRESOLVED"]
+    },
+
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["observations_used", "constraints_used"],
+      "properties": {
+        "observations_used": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "constraints_used": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+
+    "notes": { "type": "string" }
+  }
+}

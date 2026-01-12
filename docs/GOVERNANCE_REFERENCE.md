@@ -1,12 +1,15 @@
-# Governance Reference
+# Governance Reference for Trizel Phase4 Gateway
 
-This repository operates under the TRIZEL Cross-Repository Governance framework.
+This document serves as the canonical pointer to the governance model and rules for contributions, decision-making, and project organization. For full details, please refer to the official Trizel project governance guidelines.
 
-Governance is defined, versioned, and maintained exclusively in the canonical source below.
-No local governance interpretation or modification is permitted.
+## Canonical Governance Reference
 
-Canonical source:
-- trizel-ai/trizel-core/docs/governance/CROSS_REPO_GOVERNANCE.md
+The up-to-date governance, contribution policies, and project structure are maintained at the organization level. Please see:
 
-Current state:
-Execution remains intentionally locked pending verifiable governance enforcement checks.
+- [Trizel Organization Governance](https://github.com/trizel-ai/.github/blob/main/docs/GOVERNANCE.md)
+
+Changes to project-level workflows or decision processes should reference and remain consistent with the canonical organization governance.
+
+---
+
+_Last updated: 2026-01-12_
